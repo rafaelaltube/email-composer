@@ -1,0 +1,154 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+@font-face{font-family:'DIN1b';src:url('../fonts/DIN1bold.ttf') format('truetype');}
+@font-face{font-family:'DIN1m';src:url('../fonts/DIN1medium.ttf') format('truetype');}
+@font-face{font-family:'DIN1l';src:url('../fonts/DIN1light.ttf') format('truetype');}
+
+*{
+  box-sizing: border-box;
+}
+body,html{
+  text-align:center;
+  font-family: 'DIN1m','open sans';
+  background-image: url(../images/pattern2.png);
+  sbackground-position: -30px;
+  height: 100%;
+  background: linear-gradient(#00bef0, #50d2dc);
+}
+.row{margin:0;}
+
+.wrapper{
+	position: relative;
+	top:100px;
+	width:560px;
+	margin:10px auto;
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+.wrapper .head{
+	padding: 20px;
+    background: #094358;
+    color: #fff;
+    border-radius: 2px;
+}
+.wrapper .head.verified{
+	padding: 40px 20px;
+	background: #fff;
+    color: #555;
+    margin: 0 80px;
+    border-radius: 2px 2px 0 0;
+    border-bottom: 1px solid #ccc;
+}
+.wrapper .head.verified .fa.fa-check-circle{
+	font-size: 100px;
+    color: #4bd49c;
+}
+.wrapper .body{
+	padding: 20px;
+	
+}
+.wrapper .body.verified{
+	margin: 0 80px;
+	padding: 40px 0;
+}
+
+input,
+textarea{
+	width:100%;
+	margin: 10px 0;
+}
+input:invalid,
+input.invalid,
+textarea.invalid {
+  border: 1px solid red;
+}
+
+input:valid {
+  /*border: 1px solid green;*/
+}
+.submit{
+	border-radius: 40px;
+    width: 80px;
+	background-color: #00bef0;
+	color:#fff;
+	padding:10px;
+	position: relative;
+    left: calc(100% - 80px);
+    cursor:pointer;
+}
+.submit .fa{
+    margin-right: 5px;
+}
+.submit.disabled{
+	background-color: #e0e0e0;
+	color:#97999c;
+	cursor:not-allowed;
+}
+
+.attach-false{
+	width: 40px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	padding: 8px;
+}
+.attach-false:hover{
+	cursor:pointer;
+}
+.attach-false .fa{
+	color:#555;
+}
+.thumbs{
+	margin: 10px 0;
+}
+.thumbs img{
+	height:80px;
+	margin: 0 5px 5px 0;
+}
+.thumb-title{
+	display:none;
+}
+
+.thumbs .image{
+	display: inline-block;
+	margin: 0 5px 5px 0;
+}
+.thumbs .image .content {
+	width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+.thumbs .image .drop{
+	display:none;
+	cursor:pointer;
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	background-color:#cccccc70;
+}
+.thumbs .image:hover .drop{
+	display:block;
+}
+.thumbs .image .drop .fa-trash{
+	font-size:20px;
+	position: relative;
+	top:50px;
+	left:50px;
+}
+
+.subject{
+	margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.remittance{
+	display: inline-block;
+	color:#00bef0;
+}
+.message{
+	margin-top: 20px;
+}
+.thumbs-send{
+	margin-top:20px;
+}

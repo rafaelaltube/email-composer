@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+
+    <!--
+    # CODE HERE
+    -->
+    <div id="new-email" class="container">
+      <div class="wrapper">
+        <div class="head text-left">Send E-mail</div>
+        <div class="body">
+          <form>
+            <input type="email" name="to" placeholder="To" class="form-control" multiple pattern="^([\w+-.%]+@[\w-.]+\.[A-Za-z]{2,4},*[\W]*)+$" value="">
+            <input type="email" name="cc" placeholder="CC" class="form-control" multiple pattern="^([\w+-.%]+@[\w-.]+\.[A-Za-z]{2,4},*[\W]*)+$" value="">
+            <input type="email" name="bcc" placeholder="BCC" class="form-control" multiple pattern="^([\w+-.%]+@[\w-.]+\.[A-Za-z]{2,4},*[\W]*)+$" value="">
+            <input type="text" name="subject" placeholder="Subject" class="form-control">
+            <textarea name="message" placeholder="Message" class="form-control" style="height:150px;"></textarea>
+
+            <input type="file" id="attach" class="attach hidden" accept=".jpg,.jpeg.,.gif,.png">
+            <div id="thumbs" class="thumbs text-left">
+              <div id="thumbs-title" class="thumb-title">Attached files</div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-6" style="padding:0;">
+                <div id="attach-false" class="attach-false"><i class="fa fa-file"></i></div>
+              </div>
+              <div class="col-xs-6" style="padding:0;">
+                <div id="submit-false" class="submit disabled"><i class="fa fa-arrow-right"></i>Send</div>
+                <input id="submit" type="submit" name="submit" class="hidden">
+              </div>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="confirmation" class="container hidden">
+      <div class="wrapper">
+        <div class="head verified text-center">
+          <i class="fa fa-check-circle"></i>
+          <h4>Your email has been sent</h4>
+        </div>
+        <div class="body verified">
+            
+          <div id="subject" class="subject text-left"></div>
+          <div class="row text-left">To: <div id="remittance-to" class="remittance"></div></div>
+          <div class="row text-left">Cc: <div id="remittance-cc" class="remittance"></div></div>
+          <div class="row text-left">Bcc: <div id="remittance-bcc" class="remittance"></div></div>
+          <div id="message" class="message text-left"></div>
+          <div id="thumbs-send" class="thumbs thumbs-send text-left"></div>
+
+        </div>
+      </div>
+    </div>
+
+    
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- /build -->
+    <script type="text/javascript">
+
+      $(document).ready(function () {
+
+         
+      });
+
+    </script>
+  </body>
+</html>
